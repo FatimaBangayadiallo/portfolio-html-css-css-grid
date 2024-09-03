@@ -188,11 +188,12 @@ Navbar
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  /* border: 2px solid red; */
 }
 /* the nav heading */
 .nav-header {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
 .nav-btn {
@@ -203,7 +204,37 @@ Navbar
   /* justify-content: space-between; */
   justify-self: end;
 }
-
+/* navabar on the bigger screen */
+@media screen and (min-width: 992px) {
+  .nav {
+    background-color: var(--clr-primary-10);
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 2rem;
+    justify-self: end;
+  }
+  .nav-links a {
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    color: var(--clr-grey-1);
+    transition: var(--transition);
+    font-weight: bold;
+  }
+  .nav-links a:hover {
+    color: var(--clr-primary-5);
+  }
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
 /*
 =============== 
 Sidebar

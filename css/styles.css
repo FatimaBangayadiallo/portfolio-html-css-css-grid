@@ -171,6 +171,38 @@ p {
 Navbar
 ===============
 */
+/* navbar for the small screen*/
+.nav {
+  height: 5rem;
+  /* border: 2px solid red; */
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  transition: var(--transition);
+}
+.nav-links {
+  display: none;
+}
+/* to always make the nav on the center */
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* the nav heading */
+.nav-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.nav-btn {
+  background-color: transparent;
+  border: transparent;
+  font-size: 2rem;
+  color: var(--clr-primary-5);
+  /* justify-content: space-between; */
+  justify-self: end;
+}
 
 /*
 =============== 

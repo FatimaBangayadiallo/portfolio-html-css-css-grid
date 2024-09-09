@@ -241,6 +241,69 @@ Navbar
 Sidebar
 ===============
 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-grey-10);
+  display: grid;
+  /* align-items: center;
+  justify-content: center; */
+  place-items: center;
+  transition: var(--transition);
+  /* add later to make the sidebar deasapear later */
+  transform: translateX(-100%);
+}
+/* the fonction to show the hidden navbar */
+.show-sidebar {
+  transform: translate(0);
+}
+.sidebar-links {
+  text-align: center;
+}
+.sidebar-links a {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-5);
+  transition: var(--transition);
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.sidebar-links a:hover {
+  color: var(--clr-grey-5);
+}
+.socials-icons {
+  margin-top: 3rem;
+  /* border: 2px solid red; */
+  width: 20rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 1.5rem;
+  justify-items: center;
+}
+.social-icon {
+  color: var(--clr-grey-1);
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: var(--clr-primary-5);
+}
+.close-btn {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: transparent;
+  transition: var(--transition);
+  color: #bb2525;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #e66b6b;
+}
 
 /*
 =============== 

@@ -180,6 +180,16 @@ Navbar
   align-items: center;
   transition: var(--transition);
 }
+/* nav position fixed */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-white);
+  z-index: 2;
+  width: 100%;
+  box-shadow: var(--light-shadow);
+}
 .nav-links {
   display: none;
 }
@@ -311,6 +321,10 @@ Hero
 ===============
 */
 /* underline added to globals */
+.hero {
+  background-color: #bb2525;
+  min-height: 130vh;
+}
 
 /*
 =============== 

@@ -475,6 +475,20 @@ Services
 .service:hover .underline {
   background-color: var(--clr-white);
 }
+/* on the bigger screen the services */
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /*
 =============== 
 Projects

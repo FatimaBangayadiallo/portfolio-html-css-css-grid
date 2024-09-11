@@ -440,6 +440,9 @@ Services
 */
 /* small screen layout setup */
 /* bg-grey in globals */
+.bg-grey {
+  background-color: gray;
+}
 
 /*
 =============== 
